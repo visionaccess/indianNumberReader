@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Indian Number Reader (lakh/crore)</title>
+</head>
+<body>
+<h1>Indian Number Reader (lakh/crore)</h1>
+<p>Author: Mukesh Jain, VisionAccess</p>
+
+<h2>What it does</h2>
+<p>NVDA normally reads 1,500,000 as "one million five hundred thousand". This add-on makes NVDA read it the Indian way: "fifteen lakh". It works in every application: Excel, Tally, bank statements, government PDFs, web pages and more.</p>
+<ul>
+<li>1,500,000 or 15,00,000 is read as 15 lakh</li>
+<li>12,345,678 is read as 1 crore 23 lakh 45678 (one crore twenty three lakh forty five thousand six hundred seventy eight)</li>
+<li>Rs. 1,523,456.75 is read as Rs. 15 lakh 23456 point 7 5</li>
+<li>Very large amounts such as 2,500,000,000,000 are read as 2 lakh 50000 crore</li>
+</ul>
+<p>Numbers below one lakh are not changed, because they are read the same way in both systems.</p>
+
+<h2>Commands</h2>
+<ul>
+<li><strong>NVDA+Alt+N</strong>: turn automatic Indian number reading on or off. When on, every number NVDA speaks is converted.</li>
+<li><strong>NVDA+Alt+I</strong>: read the selected text, or the current line or Excel cell, with numbers in lakh and crore. This works even when automatic reading is off.</li>
+<li><strong>NVDA+Alt+I pressed twice</strong>: copy the text to the clipboard with Indian commas, for example 15,00,000, ready to paste into a document or email.</li>
+</ul>
+<p>You can change these keys, and assign a key to open the settings, from NVDA menu, Preferences, Input Gestures, category Indian Number Reader.</p>
+
+<h2>Settings</h2>
+<p>NVDA menu, Preferences, Settings, Indian Number Reader.</p>
+<ul>
+<li><strong>Automatically read numbers in lakh and crore</strong>: on by default.</li>
+<li><strong>Also convert numbers written without commas</strong>: for example 1500000 as shown in many Excel cells. On by default.</li>
+<li><strong>Minimum and maximum digits for numbers without commas</strong>: default 7 to 9. This keeps 6-digit PIN codes and OTPs, 10-digit mobile numbers, and long account or Aadhaar numbers from being read as lakh or crore. Set the minimum to 6 if you want amounts like 500000 converted automatically too.</li>
+</ul>
+<p>Numbers that have commas are always converted, whatever their length. Numbers joined to letters, such as INV1500000, are left as they are.</p>
+</body>
+</html>
